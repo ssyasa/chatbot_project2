@@ -98,8 +98,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 For any inquiries or feedback, feel free to reach out:
 
 - **Email**: syasa3404@gmail.com
-- **GitHub**: [Shreyas](["https://github.com/ssyasa"])
-
 ---
 
 Feel free to customize this README file further according to your project specifics and any additional features or instructions you want to include.
