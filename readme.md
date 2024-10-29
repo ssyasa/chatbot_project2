@@ -1,6 +1,6 @@
 # Chatbot Application
 
-## Overview
+**Overview**
 
 This project is a web-based chatbot application that leverages the Llama large language model (LLM) for generating conversational responses. The chatbot provides users with an interactive chat experience, allowing them to ask questions and receive answers in real-time. The design resembles popular messaging applications like WhatsApp, offering a user-friendly interface.
 
