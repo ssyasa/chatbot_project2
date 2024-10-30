@@ -3,29 +3,29 @@ body {
   font-family: Arial, sans-serif;
   background: #f5f5f5;
   margin: 0;
-  transition: background 0.3s;
+  transition: background 0.5s;
 }
 
 .dark-mode {
-  background: #1e1e1e;
+  background: #404040;
 }
 
 .chatbot-window {
   position: fixed;
-  bottom: 80px;
+  bottom: 100px;
   right: 20px;
-  width: 380px;
+  width: 300px;
   max-height: 500px;
   display: none;
   flex-direction: column;
-  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  background: #e5ddd5;
 }
 
 .dark-mode .chatbot-window {
-  background: #333333;
+  background: #000000;
 }
 
 .chat-header {
@@ -83,27 +83,68 @@ body {
 
 .bot-message {
   background-color: #ffffff;
-  color: #333;
-  border-top-left-radius: 0; /* Slightly adjust border radius */
+  color: #000000;
+  border-top-left-radius: 10; /* Slightly adjust border radius */
 }
 
 .dark-mode .user-message {
-  background-color: #075e54;
-  color: #ffffff;
+  background-color: #dcf8c6;
+  color: #000000;
 }
 
 .dark-mode .bot-message {
   background-color: #2e2e2e;
   color: #fff;
+  border-top-left-radius: 10; 
 }
+
+
 
 /* Typing Indicator */
 .typing-indicator {
-  padding: 10px;
   display: none;
-  font-size: 12px;
-  color: #666;
+  font-size: 16px;
+  border-top-left-radius: 20;
+  color: #1d450c;
+  margin-bottom: 0px;
+  position: relative;
+  font-style: normal;
+  border-radius: 18px;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;  
 }
+
+.dark-mode .typing-indicator {
+  color: #a6d58a;
+  background: #000000;
+}
+
+.typing-indicator span {
+  display: inline-block;
+  animation: blink 1.5s infinite;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes blink {
+  0%, 20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 
 .chat-footer {
   display: flex;
@@ -113,14 +154,14 @@ body {
 .dark-mode .chat-footer {
   display: flex;
   padding: 10px;
-  background: #000000;
+  background: #e8fee2;
 }
 
 input[type="text"] {
   flex-grow: 1;
   padding: 10px;
   border-radius: 18px;
-  border: 1.5px solid #97fb9c;
+  border: 1.5px solid #a5eaa9;
   outline: none;
   font-size: 14px;
   margin-right: 10px;
