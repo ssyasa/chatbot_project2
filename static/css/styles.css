@@ -46,6 +46,15 @@ body {
   flex-direction: column; /* Added */
   align-items: flex-start; /* Added */
 }
+.dark-mode .chat-body {
+  padding: 15px;
+  background: #000000;
+  overflow-y: auto;
+  flex-grow: 1;
+  display: flex; /* Added */
+  flex-direction: column; /* Added */
+  align-items: flex-start; /* Added */
+}
 
 /* Message Styling */
 .message {
@@ -101,6 +110,11 @@ body {
   padding: 10px;
   background: #e8fee2;
 }
+.dark-mode .chat-footer {
+  display: flex;
+  padding: 10px;
+  background: #000000;
+}
 
 input[type="text"] {
   flex-grow: 1;
@@ -135,19 +149,44 @@ button:hover {
 }
 
 /* Chat Icon */
+
 .chat-icon {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #075e54;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* Keep it on top */
+  background-color: #75ac80;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease;
 }
 
 .chat-icon:hover {
-  background: #0d6b6f;
+  transform: scale(1.2);
+}
+.chat-footer button {
+  background: none;
+  border: none;
+  padding: 5px; /* Increased padding for larger button */
+  cursor: pointer;
+  border-radius: 50%; /* Make button round */
+  width: 38px; /* Set width for button size */
+  height: 38px; /* Set height for button size */
+}
+
+.chat-footer button svg {
+  width: 32px; /* Larger icon width */
+  height: 32px; /* Larger icon height */
+  padding: 5; /* Remove internal padding */
+  vertical-align: middle;
+  transition: transform 0.2s ease; /* Smooth hover transition */
+}
+
+.chat-footer button:hover svg {
+  transform: scale(1.1); /* Slightly enlarge on hover */
 }
