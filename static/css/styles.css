@@ -31,7 +31,7 @@ body {
 .chat-header {
   background: #075e54;
   color: white;
-  padding: 15px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
